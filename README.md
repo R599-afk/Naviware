@@ -2,7 +2,7 @@
 
 Naviware is a specialized optimization utility designed to synchronize personalized in-game profile data via high-performance cloud-based architecture and real-time data streaming.
 
-## 🚀 What's New in v1.1.5
+## 🚀 What's New in v1.1.6
 * **Auto-Updater:** Naviware now silently updates itself on launch.
 * **Smart UI & Tiered Access:** Features are now dynamically locked and highlighted based on your active license plan.
 * **Anti-Lag Engine:** Smart caching prevents unnecessary server requests, making your Bloodweb and menus significantly faster.
