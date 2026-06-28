@@ -1,80 +1,150 @@
 # 🛡️ Naviware
 
-Naviware is a specialized optimization utility designed to synchronize personalized in-game profile data via high-performance cloud-based architecture and real-time data streaming.
+Naviware is a specialized optimization utility that syncs your personalized in-game profile data through a fast, cloud-based service. It runs quietly in the background, applies your chosen configuration, and stays out of your way while you play.
 
-## 🚀 What's New in v1.1.6
-* **Auto-Updater:** Naviware now silently updates itself on launch.
-* **Smart UI & Tiered Access:** Features are now dynamically locked and highlighted based on your active license plan.
-* **Anti-Lag Engine:** Smart caching prevents unnecessary server requests, making your Bloodweb and menus significantly faster.
-* **On-Demand Tracing:** Network logs are now strictly opt-in to keep your desktop clean.
+---
+
+## 🚀 What's New in v1.2.0
+
+* **Five preset slots** — save and load up to **five** full configurations (was three).
+* **Remembers your last setup** — Naviware now restores your most recent Loadout (Target Prestige, Prestige Logic, Inventory Mode, Auto-Launch) automatically on restart, so you don't have to re-pick everything each time you open it.
+* **"Violet Glass" interface** — a clean sidebar layout with five tabs (Dashboard, Loadout, Presets, Console, Settings).
+* **Clear plan awareness** — features that aren't part of your current license plan are clearly marked **Locked**, so you always know what's available.
+* **Instant preset feedback** — saving or loading a preset confirms on screen (`✓ Saved` / `✓ Loaded`).
+* **Live dashboard** — see your system status, last refresh timer, target prestige, and active settings at a glance.
+* **Auto-Updater** — Naviware keeps itself up to date automatically on launch.
+
+---
+
+## 💻 System Requirements
+
+* **Windows 10 or 11 (64-bit).**
+* **Administrator rights** — Naviware needs to run as Administrator (Windows will prompt you).
+* **An active internet connection.**
+* **No extra installs** — everything Naviware needs is built into the app. You don't have to install .NET or any other software.
+
+---
+
+## ⚠️ First Run: Windows / Antivirus Warning (Important)
+
+The **first** time you open `Naviware.exe`, Windows SmartScreen or your antivirus may show a warning — for example *"Windows protected your PC"*, or your antivirus may quarantine the file. **This is a false positive. Naviware is safe to run.**
+
+Because Naviware is a new tool that connects to our service and adjusts a few Windows network settings while it runs, security software that hasn't seen it before sometimes flags it out of caution. Here's how to get past it:
+
+* **Windows SmartScreen ("Windows protected your PC"):** click **More info → Run anyway**.
+* **Antivirus blocked or deleted the file (Windows Defender, Avast, Bitdefender, etc.):** add Naviware — and the folder it lives in — to your antivirus **exclusions / allow-list**, then download it again if it was removed.
+* Keep `Naviware.exe` in its **own folder**, and always run it **as Administrator** (click **Yes** on the Windows prompt).
+
+> If your antivirus keeps deleting Naviware after you allow it, make sure you added the **whole folder** to exclusions before re-downloading.
 
 ---
 
 ## ⚙️ How to Use (Step-by-Step Setup)
 
-**⚠️ CRITICAL:** Launchers cache system settings. If Epic Games or the Xbox app is opened BEFORE Naviware, the game will ignore the app. Always follow this exact order!
+> **⚠️ IMPORTANT — order matters!** Game launchers cache system settings when they open. If **Epic Games** or the **Xbox / Microsoft Store** app is opened *before* Naviware, the game may ignore it. Always follow this exact order.
 
-1. **Close your game launcher completely** (Make sure Epic Games or the Xbox app is NOT running in your system tray).
-2. Run `Naviware.exe` (Click 'Yes' when Windows asks for Administrator permissions).
-3. **Authenticate:** Enter your License Key in the popup window.
-4. Set up your desired options in the main app (Target Prestige, Logic, Inventory Mode). *Note: Features unavailable in your current plan will be locked and highlighted in red.*
-5. Click **START** and wait for the console to say `Waiting for game...`.
-6. Open your launcher (Epic Games / Microsoft Store) and start Dead by Daylight.
+1. **Close your game launcher completely.** Make sure Epic Games or the Xbox app is fully closed — check your system tray (bottom-right) and exit it if it's still running.
+2. **Run `Naviware.exe`.** Click **Yes** when Windows asks for Administrator permission.
+3. **Activate your license.** Enter your License Key in the popup and click **ACTIVATE**.
+4. **Choose your options** on the **Loadout** tab (Target Prestige, Prestige Logic, Inventory Mode, Auto-Launch). Anything not included in your plan will appear greyed out / marked **Locked**.
+5. **Click START** on the Dashboard and wait for the console to say it's ready and waiting for the game.
+6. **Open your launcher** (Epic Games / Microsoft Store) and start Dead by Daylight.
+
+That's it — Naviware applies your settings automatically once the game connects.
 
 ---
 
-## 🎮 Features & UI Explained
+## 🧭 Navigating the App
 
-### ⚙️ Main Settings
-* **Target Prestige:** Select the prestige level you want injected into the game for your characters.
+The sidebar on the left switches between five tabs:
+
+* **🏠 Dashboard** — your home screen. Shows live status (System, last refresh, Target Prestige) and a quick summary of your current settings. The big **START** button lives here.
+* **🎛️ Loadout** — where you configure everything (prestige, logic, inventory amounts, auto-launch).
+* **💾 Presets** — save and load up to five configuration slots.
+* **🖥️ Console** — live activity log, plus the **FIX NETWORK** repair tool.
+* **⚙️ Settings** — overlay hotkey, Ghost Mode info, and your license key.
+
+Your active plan is shown next to the page title (e.g. **FULL PLAN**), and the status pill (top-right) shows whether Naviware is Idle, in a lobby, in queue, or in a match.
+
+---
+
+## 🎛️ Settings Explained
+
+### Loadout tab
+* **Target Prestige** — the prestige level you want shown for your characters.
 * **Prestige Logic:**
-  * *Smart Mode (Keep Higher Legit):* If your actual, legitimate prestige on a character is *higher* than your Target Prestige, the app will keep your real level so you don't downgrade.
-  * *Force Mode:* Forces the Target Prestige on all characters, regardless of their real level.
-* **Inventory Mode:** Choose how item quantities are injected (Default, Fixed Amount, or Custom Random Range). *Only available for Full/Items plans.*
-* **Auto-Launch:** Automatically opens your selected launcher once Naviware is successfully running.
-* **Overlay Key:** The hotkey used to toggle the in-game overlay (Default: `Insert`).
-* **Presets (1, 2, 3):** Save your favorite configurations. Left-click to load a preset, Right-click to save current settings to that slot.
+  * *Smart Mode (Keep Higher Legit):* if your real prestige on a character is **higher** than your Target Prestige, Naviware keeps your real level so you never appear to downgrade.
+  * *Force Mode:* applies the Target Prestige to **all** characters regardless of their real level.
+* **Inventory Mode** — how item quantities are set: **Default**, **Custom Fixed Amount**, or **Custom Random Range** (min/max). *Available on Full / Items plans.*
+* **Auto-Launch** — optionally open your launcher automatically once Naviware is running.
 
-### 🔘 Action Buttons
-* 🟣 **START:** Initializes the application, secures the connection, and waits for the game to launch.
-* 🟠 **FIX:** If Naviware crashes or you lose your internet connection after closing the app, click this! It forcefully resets your Windows network settings back to normal.
-* 🔵 **RUN DEBUG:** Toggles Network Tracing. If you are experiencing issues, enable this *before* clicking Start. It will save a `Naviware_NetworkTrace.txt` file to your desktop to help us diagnose the problem.
+### Settings tab
+* **Overlay Key** — the hotkey that toggles the in-game overlay. Default: **`Insert`**. Choose **Custom…** and press any key to rebind it.
+* **Ghost Mode** — press **`HOME`** in-game to toggle the overlay's transparency.
+* **License Key** — shows the key currently activated on this device.
+
+### Presets tab
+* **SAVE** — stores your current Loadout settings into that slot (an on-screen `✓ Saved` confirms it).
+* **LOAD** — applies the settings stored in that slot (`✓ Loaded` confirms it).
 
 ---
 
-## 🛠️ Troubleshooting & Known Conflicts
+## 🔘 Action Buttons
 
-If the application is running but the changes aren't applying (e.g., game doesn't connect, or status logo is red), a 3rd-party software or Windows setting is blocking the app.
+* 🟣 **START** *(Dashboard)* — starts Naviware, prepares the connection, and waits for the game. Becomes **STOP** while running.
+* 🔴 **FIX NETWORK** *(Console)* — if Naviware ever closes unexpectedly or you lose internet after using it, click this to reset your Windows network settings back to normal.
+
+---
+
+## 🔒 License Plans
+
+Naviware adjusts what's available based on your plan. Anything outside your plan is clearly marked **Locked** in the app:
+
+* **Full** — everything unlocked.
+* **Items** — item/inventory and prestige features (cosmetic features locked).
+* **Skins** — cosmetic features (prestige/inventory features locked).
+
+If something looks greyed out or says **Locked**, it simply isn't part of your current plan.
+
+---
+
+## 🛠️ Troubleshooting
+
+If Naviware is running but your changes aren't showing up (status looks red, or the game won't connect), something on your PC is usually getting in the way. The most common causes:
 
 ### 1. Riot Vanguard (VALORANT)
-* **The Issue:** Vanguard runs at the kernel level 24/7 and strictly blocks third-party background network utilities.
-* **The Fix:** Right-click the Vanguard icon in your system tray (bottom right) and click **Exit Vanguard**. Restart Naviware.
+Vanguard runs at all times and blocks third-party background utilities.
+**Fix:** Right-click the Vanguard icon in your system tray and choose **Exit Vanguard**, then restart Naviware.
 
-### 2. OEM "Network Boosters" (Bloatware)
-* **The Issue:** Pre-built PCs come with hidden apps that aggressively reroute game connections, preventing Naviware from syncing.
-* **The Fix:** Turn OFF or Uninstall the following:
-  * **ASUS:** `GameFirst` or Network Boost in Armoury Crate
-  * **Lenovo:** `Lenovo Vantage` (Turn OFF "Network Boost")
-  * **MSI/HP:** `Killer Intelligence Center` / `HP Omen Gaming Hub`
-  * **Hidden Engines:** `cFosSpeed`
+### 2. OEM "Network Booster" apps (pre-built / gaming PCs)
+Many pre-built PCs ship with apps that reroute game traffic.
+**Fix:** Turn off or uninstall things like:
+* **ASUS:** *GameFirst* / Network Boost (Armoury Crate)
+* **Lenovo:** *Lenovo Vantage* → turn off "Network Boost"
+* **MSI / HP:** *Killer Intelligence Center* / *HP Omen Gaming Hub*
+* **Other:** *cFosSpeed*
 
-### 3. Encrypted DNS / IPv6 Interference
-* **The Fix:** Ensure your Windows DNS is set to **Automatic (DHCP)** in Settings. For IPv6, go to your Network Adapter Properties and **Uncheck** `Internet Protocol Version 6 (TCP/IPv6)`.
+### 3. DNS / IPv6 interference
+**Fix:** Set your Windows DNS to **Automatic (DHCP)**. If issues persist, open your network adapter properties and **uncheck** `Internet Protocol Version 6 (TCP/IPv6)`.
 
-### 4. System Validation Error
-* **The Fix (Manual Trust Setup):**
-  1. Open the Naviware folder and double-click the `rootCert.pfx` file.
-  2. Select **Current User** -> Next (leave password blank).
-  3. Select **"Place all certificates in the following store"** -> Browse -> Choose **Trusted Root Certification Authorities**.
-  4. Finish and click **Yes** on the Windows prompt.
+### 4. Run as Administrator
+Always launch Naviware with Administrator rights (click **Yes** on the Windows prompt). If you previously denied a first-run setup prompt, close everything and relaunch, accepting the prompt this time.
 
 ---
 
-## ⚕️ Built-in Debug Utility
+## ⚕️ Still Stuck? Contact Support
 
-If you followed the steps and the game still doesn't connect, use the built-in troubleshooter!
+If you've worked through the steps above and Naviware still isn't applying your changes:
 
-1. Close your game and launcher.
-2. Open `Naviware.exe` and click the **RUN DEBUG** button (it will highlight to indicate it's active).
-3. Click **START** and launch your game. 
-4. Once the error occurs, close Naviware. A `Naviware_NetworkTrace.txt` file will be generated on your Desktop. Send this file to the developer for advanced support!
+1. Click **FIX NETWORK** on the **Console** tab to reset your Windows network settings.
+2. Restart your PC, then try the setup again in the correct order (launcher fully closed → run Naviware → **START** → open launcher).
+3. Join our community via the **Buy License / Join Discord** link in the app and let us know:
+   * which **plan** you're on,
+   * what the **Console** log and the **status pill** (top-right) are showing,
+   * which troubleshooting steps you've already tried.
+
+Our team will take it from there.
+
+---
+
+*Need help or a license? Join our community via the **Buy License** / **Join Discord** links in the app.*
