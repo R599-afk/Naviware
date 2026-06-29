@@ -4,12 +4,13 @@ Naviware is a specialized optimization utility that syncs your personalized in-g
 
 ---
 
-## 🚀 What's New in v1.2.1
+## 🚀 What's New in v1.2.2
 
-* **Plan line-up clarified** — each license plan now precisely matches its store listing. **Prestige customization is a Full-plan feature**, the **Items** plan focuses on item & inventory control, and the **Skins** plan on cosmetics.
+* **Skins switch** — a new on/off toggle on the **Loadout** tab lets you turn "unlock all skins" on or off whenever you like. It's **on by default** on the **Skins** and **Full** plans, so nothing changes unless you want it to.
+* **Skins status on the Dashboard** — your current skins setting (**On / Off / Locked**) now shows at a glance alongside your other settings.
 * **Reliability & accuracy fixes** under the hood.
 
-> Building on everything introduced in **v1.2.0**: five preset slots, last-setup memory, the "Violet Glass" sidebar interface, clear plan-lock indicators, instant preset feedback (`✓ Saved` / `✓ Loaded`), the live dashboard, and the built-in auto-updater.
+> Building on **v1.2.1** (license plans aligned to each store listing) and everything from **v1.2.0**: five preset slots, last-setup memory, the "Violet Glass" sidebar interface, clear plan-lock indicators, instant preset feedback (`✓ Saved` / `✓ Loaded`), the live dashboard, and the built-in auto-updater.
 
 ---
 
