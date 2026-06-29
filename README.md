@@ -4,15 +4,12 @@ Naviware is a specialized optimization utility that syncs your personalized in-g
 
 ---
 
-## 🚀 What's New in v1.2.0
+## 🚀 What's New in v1.2.1
 
-* **Five preset slots** — save and load up to **five** full configurations (was three).
-* **Remembers your last setup** — Naviware now restores your most recent Loadout (Target Prestige, Prestige Logic, Inventory Mode, Auto-Launch) automatically on restart, so you don't have to re-pick everything each time you open it.
-* **"Violet Glass" interface** — a clean sidebar layout with five tabs (Dashboard, Loadout, Presets, Console, Settings).
-* **Clear plan awareness** — features that aren't part of your current license plan are clearly marked **Locked**, so you always know what's available.
-* **Instant preset feedback** — saving or loading a preset confirms on screen (`✓ Saved` / `✓ Loaded`).
-* **Live dashboard** — see your system status, last refresh timer, target prestige, and active settings at a glance.
-* **Auto-Updater** — Naviware keeps itself up to date automatically on launch.
+* **Plan line-up clarified** — each license plan now precisely matches its store listing. **Prestige customization is a Full-plan feature**, the **Items** plan focuses on item & inventory control, and the **Skins** plan on cosmetics.
+* **Reliability & accuracy fixes** under the hood.
+
+> Building on everything introduced in **v1.2.0**: five preset slots, last-setup memory, the "Violet Glass" sidebar interface, clear plan-lock indicators, instant preset feedback (`✓ Saved` / `✓ Loaded`), the live dashboard, and the built-in auto-updater.
 
 ---
 
@@ -71,7 +68,7 @@ Your active plan is shown next to the page title (e.g. **FULL PLAN**), and the s
 ## 🎛️ Settings Explained
 
 ### Loadout tab
-* **Target Prestige** — the prestige level you want shown for your characters.
+* **Target Prestige** — the prestige level you want shown for your characters. *(Full plan.)*
 * **Prestige Logic:**
   * *Smart Mode (Keep Higher Legit):* if your real prestige on a character is **higher** than your Target Prestige, Naviware keeps your real level so you never appear to downgrade.
   * *Force Mode:* applies the Target Prestige to **all** characters regardless of their real level.
@@ -100,9 +97,9 @@ Your active plan is shown next to the page title (e.g. **FULL PLAN**), and the s
 
 Naviware adjusts what's available based on your plan. Anything outside your plan is clearly marked **Locked** in the app:
 
-* **Full** — everything unlocked.
-* **Items** — item/inventory and prestige features (cosmetic features locked).
-* **Skins** — cosmetic features (prestige/inventory features locked).
+* **Full** — everything unlocked (prestige, item/inventory, and cosmetics).
+* **Items** — item/inventory features (prestige and cosmetic features locked).
+* **Skins** — cosmetic features (prestige and inventory features locked).
 
 If something looks greyed out or says **Locked**, it simply isn't part of your current plan.
 
