@@ -4,11 +4,14 @@ Naviware is a specialized optimization utility that syncs your personalized in-g
 
 ---
 
-## 🚀 What's New in v1.2.3
+## What's New in v1.2.4
 
-* **Behind-the-scenes security & reliability improvements** — this release strengthens how Naviware connects to our service so your licensed features keep working smoothly. There's nothing new to configure — just update and play.
+* **Remade in-game overlay** - cleaner layout and better visibility while playing.
+* **New quick tip popup** - first-run guidance explains how to make items appear correctly after setup.
+* **Redesigned Loadout page** - clearer controls and a smoother setup flow.
+* **Self-service HWID reset page** - license holders can reset their HWID within the weekly/monthly reset limits without waiting for manual support.
 
-> Building on **v1.2.2** (the Skins on/off toggle & Dashboard skins status), **v1.2.1** (license plans aligned to each store listing), and everything from **v1.2.0**: five preset slots, last-setup memory, the “Violet Glass” sidebar interface, clear plan-lock indicators, instant preset feedback (`✓ Saved` / `✓ Loaded`), the live dashboard, and the built-in auto-updater.
+> Building on **v1.2.3** (behind-the-scenes security and reliability improvements), **v1.2.2** (the Skins on/off toggle & Dashboard skins status), **v1.2.1** (license plans aligned to each store listing), and everything from **v1.2.0**: five preset slots, last-setup memory, the Violet Glass sidebar interface, clear plan-lock indicators, instant preset feedback, the live dashboard, and the built-in auto-updater.
 
 ---
 
