@@ -4,14 +4,20 @@ Naviware is a specialized optimization utility that syncs your personalized in-g
 
 ---
 
-## What's New in v1.2.4
+## What's New in v1.2.5
 
-* **Remade in-game overlay** - cleaner layout and better visibility while playing.
-* **New quick tip popup** - first-run guidance explains how to make items appear correctly after setup.
-* **Redesigned Loadout page** - clearer controls and a smoother setup flow.
-* **Self-service HWID reset page** - license holders can reset their HWID within the weekly/monthly reset limits without waiting for manual support.
+* **New update progress popup** - updates now show visible download/install progress so you can see that something is happening.
+* **Safer in-app device reset** - license holders can reset their device lock from the currently linked PC within the weekly/monthly reset limits.
+* **New Naviware support links** - the device reset page and license dashboard now use the cleaner `naviware-support` Worker address.
 
-> Building on **v1.2.3** (behind-the-scenes security and reliability improvements), **v1.2.2** (the Skins on/off toggle & Dashboard skins status), **v1.2.1** (license plans aligned to each store listing), and everything from **v1.2.0**: five preset slots, last-setup memory, the Violet Glass sidebar interface, clear plan-lock indicators, instant preset feedback, the live dashboard, and the built-in auto-updater.
+> Building on **v1.2.4** (overlay, setup guidance, and Loadout redesign), **v1.2.3** (behind-the-scenes security and reliability improvements), **v1.2.2** (the Skins on/off toggle & Dashboard skins status), **v1.2.1** (license plans aligned to each store listing), and everything from **v1.2.0**: five preset slots, last-setup memory, the Violet Glass sidebar interface, clear plan-lock indicators, instant preset feedback, the live dashboard, and the built-in auto-updater.
+
+---
+
+## Video Tutorial
+
+Watch the Naviware setup tutorial here:
+https://www.youtube.com/watch?v=i0ogUBX5dTY
 
 ---
 
@@ -39,6 +45,8 @@ Because Naviware is a new tool that connects to our service and adjusts a few Wi
 ---
 
 ## ⚙️ How to Use (Step-by-Step Setup)
+
+Prefer a video walkthrough? Watch the tutorial here: https://www.youtube.com/watch?v=i0ogUBX5dTY
 
 > **⚠️ IMPORTANT — order matters!** Game launchers cache system settings when they open. If **Epic Games** or the **Xbox / Microsoft Store** app is opened *before* Naviware, the game may ignore it. Always follow this exact order.
 
@@ -81,6 +89,7 @@ Your active plan is shown next to the page title (e.g. **FULL PLAN**), and the s
 * **Overlay Key** — the hotkey that toggles the in-game overlay. Default: **`Insert`**. Choose **Custom…** and press any key to rebind it.
 * **Ghost Mode** — press **`HOME`** in-game to toggle the overlay's transparency.
 * **License Key** — shows the key currently activated on this device.
+* **Reset Device Lock** — use this only when moving your license to another PC. It works from the currently linked PC and follows the reset cooldown/limit.
 
 ### Presets tab
 * **SAVE** — stores your current Loadout settings into that slot (an on-screen `✓ Saved` confirms it).
@@ -137,7 +146,8 @@ If you've worked through the steps above and Naviware still isn't applying your 
 
 1. Click **FIX NETWORK** on the **Console** tab to reset your Windows network settings.
 2. Restart your PC, then try the setup again in the correct order (launcher fully closed → run Naviware → **START** → open launcher).
-3. Join our community via the **Buy License / Join Discord** link in the app and let us know:
+3. If you are moving to another PC, use **Settings → Reset Device Lock** inside Naviware. If you no longer have access to the linked PC, open the device reset page: https://naviware-support.dudaiesu.workers.dev/device-reset
+4. Join our community via the **Buy License / Join Discord** link in the app and let us know:
    * which **plan** you're on,
    * what the **Console** log and the **status pill** (top-right) are showing,
    * which troubleshooting steps you've already tried.
