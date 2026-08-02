@@ -4,13 +4,14 @@ Naviware is a specialized optimization utility that syncs your personalized in-g
 
 ---
 
-## What's New in v1.2.5
+## What's New in v1.2.6
 
-* **New update progress popup** - updates now show visible download/install progress so you can see that something is happening.
-* **Safer in-app device reset** - license holders can reset their device lock from the currently linked PC within the weekly/monthly reset limits.
-* **New Naviware support links** - the device reset page and license dashboard now use the cleaner `naviware-support` Worker address.
+* **Safer updates** - Naviware now checks downloaded updates before installing them.
+* **More reliable cleanup** - shutdown/crash recovery is stricter, so Windows connection settings are restored more reliably.
+* **Clearer setup prompts** - first-time setup messages explain what Windows is asking for before Naviware continues.
+* **License reliability improvements** - plan checks, device unlinking, and license validation are stricter while keeping Items prestige locked.
 
-> Building on **v1.2.4** (overlay, setup guidance, and Loadout redesign), **v1.2.3** (behind-the-scenes security and reliability improvements), **v1.2.2** (the Skins on/off toggle & Dashboard skins status), **v1.2.1** (license plans aligned to each store listing), and everything from **v1.2.0**: five preset slots, last-setup memory, the Violet Glass sidebar interface, clear plan-lock indicators, instant preset feedback, the live dashboard, and the built-in auto-updater.
+> Building on **v1.2.5** (update progress popup, in-app device reset, and Naviware support links), **v1.2.4** (overlay, setup guidance, and Loadout redesign), **v1.2.3** (behind-the-scenes security and reliability improvements), **v1.2.2** (the Skins on/off toggle & Dashboard skins status), **v1.2.1** (license plans aligned to each store listing), and everything from **v1.2.0**: five preset slots, last-setup memory, the Violet Glass sidebar interface, clear plan-lock indicators, instant preset feedback, the live dashboard, and the built-in auto-updater.
 
 ---
 
@@ -34,7 +35,7 @@ https://www.youtube.com/watch?v=i0ogUBX5dTY
 
 The **first** time you open `Naviware.exe`, Windows SmartScreen or your antivirus may show a warning — for example *"Windows protected your PC"*, or your antivirus may quarantine the file. **This is a false positive. Naviware is safe to run.**
 
-Because Naviware is a new tool that connects to our service and adjusts a few Windows network settings while it runs, security software that hasn't seen it before sometimes flags it out of caution. Here's how to get past it:
+Because Naviware is a new tool that connects to our service and prepares your game session while it runs, security software that hasn't seen it before sometimes flags it out of caution. Here's how to get past it:
 
 * **Windows SmartScreen ("Windows protected your PC"):** click **More info → Run anyway**.
 * **Antivirus blocked or deleted the file (Windows Defender, Avast, Bitdefender, etc.):** add Naviware — and the folder it lives in — to your antivirus **exclusions / allow-list**, then download it again if it was removed.
@@ -53,7 +54,7 @@ Prefer a video walkthrough? Watch the tutorial here: https://www.youtube.com/wat
 1. **Close your game launcher completely.** Make sure Epic Games or the Xbox app is fully closed — check your system tray (bottom-right) and exit it if it's still running.
 2. **Run `Naviware.exe`.** Click **Yes** when Windows asks for Administrator permission.
 3. **Activate your license.** Enter your License Key in the popup and click **ACTIVATE**.
-4. **Choose your options** on the **Loadout** tab (Target Prestige, Prestige Logic, Inventory Mode, Auto-Launch). Anything not included in your plan will appear greyed out / marked **Locked**.
+4. **Choose your options** on the **Loadout** tab (Target Prestige, Prestige Logic, Inventory Mode, Game Launch). Anything not included in your plan will appear greyed out / marked **Locked**.
 5. **Click START** on the Dashboard and wait for the console to say it's ready and waiting for the game.
 6. **Open your launcher** (Epic Games / Microsoft Store) and start Dead by Daylight.
 
@@ -83,13 +84,13 @@ Your active plan is shown next to the page title (e.g. **FULL PLAN**), and the s
   * *Smart Mode (Keep Higher Legit):* if your real prestige on a character is **higher** than your Target Prestige, Naviware keeps your real level so you never appear to downgrade.
   * *Force Mode:* applies the Target Prestige to **all** characters regardless of their real level.
 * **Inventory Mode** — how item quantities are set: **Default**, **Custom Fixed Amount**, or **Custom Random Range** (min/max). *Available on Full / Items plans.*
-* **Auto-Launch** — optionally open your launcher automatically once Naviware is running.
+* **Game Launch** — launch manually, or let Naviware request Dead by Daylight through Epic after the secure session starts. Microsoft Store users should launch from the Xbox / Microsoft Store app after pressing **START**.
 
 ### Settings tab
 * **Overlay Key** — the hotkey that toggles the in-game overlay. Default: **`Insert`**. Choose **Custom…** and press any key to rebind it.
 * **Ghost Mode** — press **`HOME`** in-game to toggle the overlay's transparency.
 * **License Key** — shows the key currently activated on this device.
-* **Reset Device Lock** — use this only when moving your license to another PC. It works from the currently linked PC and follows the reset cooldown/limit.
+* **Unlink This PC** — use this only when moving your license to another PC. It works from the currently linked PC and follows the reset cooldown/limit.
 
 ### Presets tab
 * **SAVE** — stores your current Loadout settings into that slot (an on-screen `✓ Saved` confirms it).
@@ -100,7 +101,7 @@ Your active plan is shown next to the page title (e.g. **FULL PLAN**), and the s
 ## 🔘 Action Buttons
 
 * 🟣 **START** *(Dashboard)* — starts Naviware, prepares the connection, and waits for the game. Becomes **STOP** while running.
-* 🔴 **FIX NETWORK** *(Console)* — if Naviware ever closes unexpectedly or you lose internet after using it, click this to reset your Windows network settings back to normal.
+* 🔴 **FIX NETWORK** *(Console)* — if Naviware ever closes unexpectedly or you lose internet after using it, click this to reset your Windows connection settings and clear old Naviware setup data.
 
 ---
 
@@ -144,9 +145,9 @@ Always launch Naviware with Administrator rights (click **Yes** on the Windows p
 
 If you've worked through the steps above and Naviware still isn't applying your changes:
 
-1. Click **FIX NETWORK** on the **Console** tab to reset your Windows network settings.
+1. Click **FIX NETWORK** on the **Console** tab to reset your Windows connection settings and clear old Naviware setup data.
 2. Restart your PC, then try the setup again in the correct order (launcher fully closed → run Naviware → **START** → open launcher).
-3. If you are moving to another PC, use **Settings → Reset Device Lock** inside Naviware. If you no longer have access to the linked PC, open the device reset page: https://naviware-support.dudaiesu.workers.dev/device-reset
+3. If you are moving to another PC, use **Settings → Unlink This PC** inside Naviware. If you no longer have access to the linked PC, contact support.
 4. Join our community via the **Buy License / Join Discord** link in the app and let us know:
    * which **plan** you're on,
    * what the **Console** log and the **status pill** (top-right) are showing,
