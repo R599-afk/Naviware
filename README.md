@@ -4,7 +4,7 @@ Naviware is a specialized optimization utility that syncs your personalized in-g
 
 ---
 
-## What's New in v1.2.6
+## What's New in v1.2.7
 
 * **Safer updates** - Naviware now checks downloaded updates before installing them.
 * **More reliable cleanup** - shutdown/crash recovery is stricter, so Windows connection settings are restored more reliably.
