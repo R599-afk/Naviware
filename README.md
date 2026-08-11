@@ -1,170 +1,384 @@
 # 🛡️ Naviware
 
-Naviware is a specialized optimization utility that syncs your personalized in-game profile data through a fast, cloud-based service. It runs quietly in the background, applies your chosen configuration, and stays out of your way while you play.
+Naviware is an unofficial Windows utility for supported PC editions of Dead by Daylight. It runs locally while you play and applies the prestige, inventory, perk, and cosmetic options included with your Naviware license plan.
+
+Naviware is not affiliated with, endorsed by, or approved by Behaviour Interactive.
 
 ---
 
-## What's New in v1.2.7
+## ⚠️ Compatibility
 
-* **Safer updates** - Naviware now checks downloaded updates before installing them.
-* **More reliable cleanup** - shutdown/crash recovery is stricter, so Windows connection settings are restored more reliably.
-* **Clearer setup prompts** - first-time setup messages explain what Windows is asking for before Naviware continues.
-* **License reliability improvements** - plan checks, device unlinking, and license validation are stricter while keeping Items prestige locked.
+### Supported
 
-> Building on **v1.2.5** (update progress popup, in-app device reset, and Naviware support links), **v1.2.4** (overlay, setup guidance, and Loadout redesign), **v1.2.3** (behind-the-scenes security and reliability improvements), **v1.2.2** (the Skins on/off toggle & Dashboard skins status), **v1.2.1** (license plans aligned to each store listing), and everything from **v1.2.0**: five preset slots, last-setup memory, the Violet Glass sidebar interface, clear plan-lock indicators, instant preset feedback, the live dashboard, and the built-in auto-updater.
+* **Epic Games Launcher**
+* **Microsoft Store / Xbox app on Windows**
+* **Windows 10 or Windows 11, 64-bit**
+
+### Not Supported
+
+* **Steam**
+* **Xbox, PlayStation, Nintendo Switch, or other consoles**
+* **Cloud-gaming platforms**
+* **32-bit versions of Windows**
+
+Game and platform updates may affect compatibility. Continued compatibility cannot be guaranteed after an update.
 
 ---
 
-## Video Tutorial
+## ⚠️ Important Risk Notice
 
-Watch the Naviware setup tutorial here:
+Naviware is unofficial third-party software.
+
+Using unofficial third-party software may violate the Dead by Daylight EULA, game rules, or platform rules. Its use may result in errors, loss of access, temporary suspension, or permanent account suspension.
+
+Naviware does not guarantee that its use is undetectable, ban-safe, or continuously compatible with future game updates. Previous users operating without reported problems does not guarantee the same outcome for another account.
+
+Before using Naviware, review:
+
+* [Dead by Daylight EULA](https://deadbydaylight.com/eula/)
+* [Dead by Daylight Game Ban Policy](https://support.deadbydaylight.com/hc/en-us/articles/45521322753428-Game-Bans)
+
+“Session-based” and “revertible” describe how Naviware’s local changes behave. They do not mean that using the software is risk-free.
+
+If an account is suspended, only Behaviour Interactive can provide or confirm the reason. Ban appeals must be submitted directly to Behaviour Interactive.
+
+---
+
+## 🔍 How Naviware Works
+
+Naviware starts a local HTTPS proxy on your computer and temporarily configures Windows to send supported Dead by Daylight service traffic through it.
+
+It processes selected game-service responses according to your active license plan. Other traffic is intended to pass through unchanged.
+
+During first-time setup, Naviware may ask permission to create and trust a local root certificate. This certificate is required so the local proxy can process HTTPS responses.
+
+* **START** activates the local proxy and applies the selected configuration.
+* **STOP** restores the previous Windows proxy settings and clears the active session cache.
+* The trusted Naviware certificate remains installed after a normal STOP so setup is not repeated every time.
+* **FIX NETWORK** restores the proxy settings, clears session data, and removes Naviware and legacy proxy certificates. Certificate approval will be required again on the next START.
+
+Naviware does not directly edit the Dead by Daylight save file. Its effects are applied through selected responses while Naviware is running and do not grant official ownership of content.
+
+---
+
+## ✨ Included Features
+
+Available features depend on your active plan:
+
+* Select a target prestige level from the supported choices.
+* Set supported items, add-ons, and offerings to default, fixed, or random quantities.
+* Display Tier 3 perks through supported inventory responses.
+* Enable supported cosmetics, outfits, and charms.
+* Save and load up to five configuration presets.
+* View the current Naviware status through the Dashboard and overlay.
+* Launch Dead by Daylight manually or request automatic launch through Epic Games.
+
+Naviware does **not** unlock characters, DLC, premium currency, or official account ownership of displayed content.
+
+---
+
+## 🆕 What’s New in v1.2.7
+
+* **Safer updates** — downloaded updates are verified before installation.
+* **More reliable cleanup** — shutdown and crash recovery restore Windows connection settings more reliably.
+* **Clearer setup prompts** — first-time prompts explain certificate and Windows configuration changes.
+* **License reliability improvements** — plan validation, device unlinking, and license checks are stricter.
+* **Correct plan separation** — prestige remains exclusive to the Full plan.
+
+This version also includes the preset system, update progress window, in-app device reset, skins toggle, overlay, redesigned Loadout interface, live Dashboard, and built-in updater introduced in earlier v1.2.x releases.
+
+---
+
+## 📥 Download and Tutorial
+
+Download Naviware only from the official GitHub release page:
+
+https://github.com/R599-afk/Naviware/releases/latest
+
+Video tutorial:
+
 https://www.youtube.com/watch?v=i0ogUBX5dTY
+
+Do not download Naviware from file reuploads, private messages, or unofficial mirrors.
 
 ---
 
 ## 💻 System Requirements
 
-* **Windows 10 or 11 (64-bit).**
-* **Administrator rights** — Naviware needs to run as Administrator (Windows will prompt you).
-* **An active internet connection.**
-* **No extra installs** — everything Naviware needs is built into the app. You don't have to install .NET or any other software.
+* Windows 10 or Windows 11, 64-bit
+* Administrator rights
+* An active internet connection
+* Epic Games or Microsoft Store/Xbox PC version of Dead by Daylight
+* An active Naviware license
+
+Naviware is distributed as a self-contained application. A separate .NET installation is not required.
 
 ---
 
-## ⚠️ First Run: Windows / Antivirus Warning (Important)
+## 🛡️ Windows SmartScreen and Antivirus Warnings
 
-The **first** time you open `Naviware.exe`, Windows SmartScreen or your antivirus may show a warning — for example *"Windows protected your PC"*, or your antivirus may quarantine the file. **This is a false positive. Naviware is safe to run.**
+Windows SmartScreen or antivirus software may display a warning when opening Naviware. A warning alone does not prove that a file is either malicious or safe.
 
-Because Naviware is a new tool that connects to our service and prepares your game session while it runs, security software that hasn't seen it before sometimes flags it out of caution. Here's how to get past it:
+Before continuing:
 
-* **Windows SmartScreen ("Windows protected your PC"):** click **More info → Run anyway**.
-* **Antivirus blocked or deleted the file (Windows Defender, Avast, Bitdefender, etc.):** add Naviware — and the folder it lives in — to your antivirus **exclusions / allow-list**, then download it again if it was removed.
-* Keep `Naviware.exe` in its **own folder**, and always run it **as Administrator** (click **Yes** on the Windows prompt).
+1. Confirm that the file came from the official Naviware GitHub release page.
+2. Right-click `Naviware.exe`, open **Properties**, and check that its digital signature is present and valid.
+3. Stop if the signature is missing, invalid, or the download source is uncertain.
+4. Contact support if the official signed file remains blocked.
 
-> If your antivirus keeps deleting Naviware after you allow it, make sure you added the **whole folder** to exclusions before re-downloading.
+Do not disable antivirus protection, exclude an entire folder, or disable other security software solely to run Naviware.
+
+Naviware requires Administrator permission because it manages a local proxy, certificate trust, and Windows network settings. Review the Windows prompt before approving it.
 
 ---
 
-## ⚙️ How to Use (Step-by-Step Setup)
+## ⚙️ How to Use
 
-Prefer a video walkthrough? Watch the tutorial here: https://www.youtube.com/watch?v=i0ogUBX5dTY
+> **The order matters. Configure Naviware before launching Dead by Daylight.**
 
-> **⚠️ IMPORTANT — order matters!** Game launchers cache system settings when they open. If **Epic Games** or the **Xbox / Microsoft Store** app is opened *before* Naviware, the game may ignore it. Always follow this exact order.
+1. **Close Dead by Daylight completely.**
+2. **Close the game launcher completely.**
+   * Exit Epic Games Launcher or the Xbox app.
+   * Check the Windows system tray to make sure the launcher is not still running.
+3. **Run `Naviware.exe`.**
+   * Approve the Administrator prompt after confirming that you downloaded the official signed release.
+4. **Activate your license.**
+   * Enter your license key and select **ACTIVATE**.
+   * Keep your full license key private.
+5. **Configure the Loadout page.**
+   * Choose the target prestige and application logic available with your plan.
+   * Choose the inventory quantity mode.
+   * Enable or disable supported skins.
+   * Select manual launch or Epic automatic launch.
+6. **Press START on the Dashboard.**
+7. **Review the certificate notice on first use.**
+   * Continue only if you understand and accept the local HTTPS proxy and certificate configuration.
+8. **Wait until the console reports that Naviware is ready and waiting for Dead by Daylight.**
+9. **Launch Dead by Daylight.**
+   * Epic users may use the automatic launch option.
+   * Microsoft Store users should launch through the Xbox/Microsoft Store app after Naviware is ready.
+10. **When finished, close Dead by Daylight and its launcher, then press STOP or exit Naviware.**
 
-1. **Close your game launcher completely.** Make sure Epic Games or the Xbox app is fully closed — check your system tray (bottom-right) and exit it if it's still running.
-2. **Run `Naviware.exe`.** Click **Yes** when Windows asks for Administrator permission.
-3. **Activate your license.** Enter your License Key in the popup and click **ACTIVATE**.
-4. **Choose your options** on the **Loadout** tab (Target Prestige, Prestige Logic, Inventory Mode, Game Launch). Anything not included in your plan will appear greyed out / marked **Locked**.
-5. **Click START** on the Dashboard and wait for the console to say it's ready and waiting for the game.
-6. **Open your launcher** (Epic Games / Microsoft Store) and start Dead by Daylight.
+---
 
-That's it — Naviware applies your settings automatically once the game connects.
+## ⚠️ Do Not Change Settings During an Active Session
+
+Configure all settings before pressing START and while Dead by Daylight is closed.
+
+Changing prestige, prestige logic, skins, inventory mode, or quantities while Naviware and the game are already running is unsupported and may not apply consistently.
+
+To change settings:
+
+1. Close Dead by Daylight.
+2. Close the game launcher.
+3. Press **STOP** in Naviware.
+4. Change the configuration.
+5. Press **START** again.
+6. Wait until Naviware is ready.
+7. Relaunch Dead by Daylight.
+
+Do not manually edit Naviware configuration files while Naviware or Dead by Daylight is running.
 
 ---
 
 ## 🧭 Navigating the App
 
-The sidebar on the left switches between five tabs:
+### 🏠 Dashboard
 
-* **🏠 Dashboard** — your home screen. Shows live status (System, last refresh, Target Prestige) and a quick summary of your current settings. The big **START** button lives here.
-* **🎛️ Loadout** — where you configure everything (prestige, logic, inventory amounts, auto-launch).
-* **💾 Presets** — save and load up to five configuration slots.
-* **🖥️ Console** — live activity log, plus the **FIX NETWORK** repair tool.
-* **⚙️ Settings** — overlay hotkey, Ghost Mode info, and your license key.
+Displays:
 
-Your active plan is shown next to the page title (e.g. **FULL PLAN**), and the status pill (top-right) shows whether Naviware is Idle, in a lobby, in queue, or in a match.
+* Naviware system status
+* Lobby, queue, and match state
+* Selected prestige
+* Inventory configuration
+* Skins status
+* Last bloodweb refresh
+* START and STOP controls
+
+### 🎛️ Loadout
+
+Configure:
+
+* Target prestige
+* Prestige application logic
+* Inventory quantity mode
+* Fixed or random item quantities
+* Supported skins
+* Game launch mode
+
+Options not included with your license plan appear greyed out or marked **Locked**.
+
+### 💾 Presets
+
+Save and load up to five configuration presets.
+
+* **SAVE** stores the current Loadout settings.
+* **LOAD** applies the stored settings.
+
+Loading a preset while Naviware is running does not reliably update the active session. Restart Naviware and the game after loading a different preset.
+
+### 🖥️ Console
+
+Displays current Naviware activity and connection information.
+
+The Console also contains **FIX NETWORK**, which performs a more complete network and certificate reset.
+
+### ⚙️ Settings
+
+Configure:
+
+* Overlay hotkey
+* Device unlinking
+* License information
+* Other application preferences
 
 ---
 
 ## 🎛️ Settings Explained
 
-### Loadout tab
-* **Target Prestige** — the prestige level you want shown for your characters. *(Full plan.)*
-* **Prestige Logic:**
-  * *Smart Mode (Keep Higher Legit):* if your real prestige on a character is **higher** than your Target Prestige, Naviware keeps your real level so you never appear to downgrade.
-  * *Force Mode:* applies the Target Prestige to **all** characters regardless of their real level.
-* **Inventory Mode** — how item quantities are set: **Default**, **Custom Fixed Amount**, or **Custom Random Range** (min/max). *Available on Full / Items plans.*
-* **Game Launch** — launch manually, or let Naviware request Dead by Daylight through Epic after the secure session starts. Microsoft Store users should launch from the Xbox / Microsoft Store app after pressing **START**.
+### Target Prestige
 
-### Settings tab
-* **Overlay Key** — the hotkey that toggles the in-game overlay. Default: **`Insert`**. Choose **Custom…** and press any key to rebind it.
-* **Ghost Mode** — press **`HOME`** in-game to toggle the overlay's transparency.
-* **License Key** — shows the key currently activated on this device.
-* **Unlink This PC** — use this only when moving your license to another PC. It works from the currently linked PC and follows the reset cooldown/limit.
+Available with the **Full** plan.
 
-### Presets tab
-* **SAVE** — stores your current Loadout settings into that slot (an on-screen `✓ Saved` confirms it).
-* **LOAD** — applies the settings stored in that slot (`✓ Loaded` confirms it).
+Choose the prestige value Naviware should display through supported responses.
 
----
+Your original earned prestige is not directly overwritten in the Dead by Daylight save file.
 
-## 🔘 Action Buttons
+### Prestige Logic
 
-* 🟣 **START** *(Dashboard)* — starts Naviware, prepares the connection, and waits for the game. Becomes **STOP** while running.
-* 🔴 **FIX NETWORK** *(Console)* — if Naviware ever closes unexpectedly or you lose internet after using it, click this to reset your Windows connection settings and clear old Naviware setup data.
+* **Smart Mode — Keep Higher Legit:** keeps a character’s real prestige when it is higher than the selected target.
+* **Force Mode:** applies the selected target through supported responses regardless of the real prestige.
+
+### Inventory Mode
+
+Available with the **Full** and **Items** plans.
+
+* **Default:** sets supported item quantities to 200.
+* **Custom Fixed:** applies one selected quantity to supported items.
+* **Custom Random Range:** selects quantities between the configured minimum and maximum.
+
+Random quantities are cached per item for the active Naviware session. Restart Naviware before changing the random range.
+
+### Supported Skins
+
+Available with the **Full** and **Skins** plans.
+
+The skins toggle is captured when Naviware starts. Changing it during an active session will not reliably change the running configuration.
+
+Displayed cosmetics do not represent official ownership and may be affected by game updates or enforcement policies.
+
+### Game Launch
+
+* **Manual:** start the supported launcher and Dead by Daylight yourself after pressing START.
+* **Epic Auto-Launch:** Naviware requests Dead by Daylight through the installed Epic Games Launcher.
+
+Microsoft Store users should use Manual mode.
+
+### Overlay
+
+* **Overlay Key:** shows or hides the Naviware overlay. Default: `Insert`.
+* **Ghost Mode:** press `HOME` to change the overlay’s visibility/opacity.
+
+Ghost Mode affects only the Naviware overlay. It does not make Naviware undetectable and does not change account risk.
+
+### Unlink This PC
+
+Use **Settings → Unlink This PC** before moving the same license to another computer.
+
+If the original computer is no longer accessible, contact support through the marketplace or channel where the license was purchased.
 
 ---
 
 ## 🔒 License Plans
 
-Naviware adjusts what's available based on your plan. Anything outside your plan is clearly marked **Locked** in the app:
+| Plan | Included | Not Included |
+| --- | --- | --- |
+| **Full** | Prestige, Tier 3 perks, supported items/add-ons/offerings, inventory quantities, and supported cosmetics | Character/DLC ownership and premium currency |
+| **Items** | Tier 3 perks, supported items/add-ons/offerings, and inventory quantities | Prestige and cosmetics |
+| **Skins** | Supported cosmetics, outfits, and charms | Prestige, items, inventory quantities, and perks |
 
-* **Full** — everything unlocked (prestige, item/inventory, and cosmetics).
-* **Items** — item/inventory features (prestige and cosmetic features locked).
-* **Skins** — cosmetic features (prestige and inventory features locked).
+Anything outside the active plan appears **Locked** in Naviware.
 
-If something looks greyed out or says **Locked**, it simply isn't part of your current plan.
+---
+
+## 🔄 Session Behavior and Cleanup
+
+Naviware’s modifications are session-based:
+
+* Naviware applies supported changes while its local proxy is active.
+* Pressing STOP stops further Naviware processing and restores the previous Windows proxy settings.
+* Restart Dead by Daylight after stopping Naviware to return to normal game responses.
+* Session-based behavior does not guarantee that use is undetectable or risk-free.
+
+If Naviware closes unexpectedly and Windows loses network access:
+
+1. Reopen Naviware as Administrator.
+2. Open the **Console** page.
+3. Select **FIX NETWORK**.
+4. Confirm the reset.
+5. Restart Windows if the connection is not restored immediately.
+
+FIX NETWORK removes Naviware’s trusted proxy certificate and legacy proxy artifacts. The certificate setup notice will appear again the next time you press START.
 
 ---
 
 ## 🛠️ Troubleshooting
 
-If Naviware is running but your changes aren't showing up (status looks red, or the game won't connect), something on your PC is usually getting in the way. The most common causes:
+### Changes Do Not Appear
 
-### 1. Riot Vanguard (VALORANT)
-Vanguard runs at all times and blocks third-party background utilities.
-**Fix:** Right-click the Vanguard icon in your system tray and choose **Exit Vanguard**, then restart Naviware.
+1. Close Dead by Daylight and its launcher.
+2. Press STOP.
+3. Confirm that your platform is supported.
+4. Confirm that the feature is included with your license plan.
+5. Configure the Loadout before pressing START.
+6. Press START and wait for the ready message.
+7. Launch Dead by Daylight again.
 
-### 2. OEM "Network Booster" apps (pre-built / gaming PCs)
-Many pre-built PCs ship with apps that reroute game traffic.
-**Fix:** Turn off or uninstall things like:
-* **ASUS:** *GameFirst* / Network Boost (Armoury Crate)
-* **Lenovo:** *Lenovo Vantage* → turn off "Network Boost"
-* **MSI / HP:** *Killer Intelligence Center* / *HP Omen Gaming Hub*
-* **Other:** *cFosSpeed*
+### Game Cannot Connect
 
-### 3. DNS / IPv6 interference
-**Fix:** Set your Windows DNS to **Automatic (DHCP)**. If issues persist, open your network adapter properties and **uncheck** `Internet Protocol Version 6 (TCP/IPv6)`.
+1. Close Dead by Daylight and its launcher.
+2. Press STOP and wait for Windows proxy restoration.
+3. If the connection remains unavailable, use **FIX NETWORK**.
+4. Restart Windows if necessary.
+5. Contact support with the Naviware version and sanitized Console output.
 
-### 4. Run as Administrator
-Always launch Naviware with Administrator rights (click **Yes** on the Windows prompt). If you previously denied a first-run setup prompt, close everything and relaunch, accepting the prompt this time.
+### Antivirus or Security Software Blocks Naviware
 
----
-## Important Risk Notice
+* Confirm that the file came from the official GitHub release page.
+* Check the digital signature.
+* Do not disable antivirus, Vanguard, firewall protection, or other security controls.
+* Do not create a broad antivirus folder exclusion.
+* Contact support if the verified official file remains blocked.
 
-Naviware is unofficial third-party software and is not affiliated with or approved by Behaviour Interactive.
+### Network or DNS Problems
 
-Using unofficial third-party software may violate DBD or platform rules and may result in errors, loss of access, temporary suspension, or permanent account suspension. Naviware makes no guarantee that its use is undetectable or ban-safe.
+Keep Windows DNS and IPv6 at their normal/default settings unless a qualified network administrator has identified a specific problem.
 
-Configure all settings before pressing START and while Dead by Daylight is closed. Changing prestige, skins, or inventory settings during an active Naviware/game session is unsupported and may not apply consistently. To change settings, close the game, stop Naviware, make the changes, and then start Naviware again.
+Do not disable IPv6 or uninstall networking/security software simply to make Naviware operate.
 
-“Session-based” and “revertible” describe how the local changes behave; they do not mean that using the software is risk-free.
+### Other Third-Party Tools
 
----
-## ⚕️ Still Stuck? Contact Support
+Other injectors, unlockers, proxies, overlays, modified configuration files, or third-party utilities are outside Naviware support and may introduce additional compatibility or account risk.
 
-If you've worked through the steps above and Naviware still isn't applying your changes:
-
-1. Click **FIX NETWORK** on the **Console** tab to reset your Windows connection settings and clear old Naviware setup data.
-2. Restart your PC, then try the setup again in the correct order (launcher fully closed → run Naviware → **START** → open launcher).
-3. If you are moving to another PC, use **Settings → Unlink This PC** inside Naviware. If you no longer have access to the linked PC, contact support.
-4. Join our community via the **Buy License / Join Discord** link in the app and let us know:
-   * which **plan** you're on,
-   * what the **Console** log and the **status pill** (top-right) are showing,
-   * which troubleshooting steps you've already tried.
-
-Our team will take it from there.
+When troubleshooting, test only with the supported official game client and Naviware configuration.
 
 ---
 
-*Need help or a license? Join our community via the **Buy License** / **Join Discord** links in the app.*
+## ⚕️ Contact Support
+
+When requesting support, include:
+
+* Naviware version
+* Dead by Daylight platform: Epic Games or Microsoft Store
+* Active Naviware plan
+* Selected settings
+* What the status pill displays
+* Sanitized Console output
+* The exact setup sequence followed
+* Any error message or screenshot
+
+Do not send:
+
+* Account passwords
+* Authentication tokens
+* Full payment
