@@ -140,7 +140,17 @@ Many pre-built PCs ship with apps that reroute game traffic.
 Always launch Naviware with Administrator rights (click **Yes** on the Windows prompt). If you previously denied a first-run setup prompt, close everything and relaunch, accepting the prompt this time.
 
 ---
+## Important Risk Notice
 
+Naviware is unofficial third-party software and is not affiliated with or approved by Behaviour Interactive.
+
+Using unofficial third-party software may violate DBD or platform rules and may result in errors, loss of access, temporary suspension, or permanent account suspension. Naviware makes no guarantee that its use is undetectable or ban-safe.
+
+Configure all settings before pressing START and while Dead by Daylight is closed. Changing prestige, skins, or inventory settings during an active Naviware/game session is unsupported and may not apply consistently. To change settings, close the game, stop Naviware, make the changes, and then start Naviware again.
+
+“Session-based” and “revertible” describe how the local changes behave; they do not mean that using the software is risk-free.
+
+---
 ## ⚕️ Still Stuck? Contact Support
 
 If you've worked through the steps above and Naviware still isn't applying your changes:
