@@ -1,0 +1,37 @@
+bin/
+obj/
+publish/
+publish-beta/
+release-artifacts/
+graphify-out/
+.superpowers/
+*.original.txt
+*.p8
+*.pfx
+Naviware_NetworkTrace.txt
+NaviwareDebug.txt
+Naviware_Capture/
+Naviware_StatusTrace/
+Naviware_Diagnostics/
+.update-test/
+.wrangler/
+g2gdelivery/
+items/
+/Bloodweb
+/GetAll
+/inventory
+/currentworker.txt
+/claudeconv.txt
+/lastmsj.txt
+/message.txt
+/message (7).txt
+/3213.png
+/image.png
+/Screenshot 2026-06-27 110137.png
+/Screenshot 2026-07-05 230932.png
+/d02cd600-fab7-425d-8dcf-2529429a4fd9.jfif
+/dotnet
+after.txt
+before.txt
+putingpresets.txt
+verifyingpresets.txt
