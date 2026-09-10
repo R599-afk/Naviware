@@ -6,7 +6,7 @@ Naviware is a specialized optimization utility that syncs your personalized in-g
 
 ## What's New in v1.2.10
 
-* **Activation hotfix** - restores license activation in the obfuscated standalone executable.
+* **Activation hotfix** - restores license activation in the standalone executable.
 * **Reliable saved state** - preserves the JSON contracts used by Terms receipts and recovery.
 * **Release verification** - checks licensing and saved-state JSON after obfuscation.
 * **Violet Glass branding** - retains the 3D violet N badge and Windows icon.
