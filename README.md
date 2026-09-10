@@ -7,7 +7,7 @@ Naviware is a specialized optimization utility that syncs your personalized in-g
 ## What's New in v1.2.10
 
 * **Activation hotfix** - restores license activation in the obfuscated standalone executable.
-* **Reliable saved state** - preserves the JSON contracts used by Terms receipts and proxy-state recovery.
+* **Reliable saved state** - preserves the JSON contracts used by Terms receipts and recovery.
 * **Release verification** - checks licensing and saved-state JSON after obfuscation.
 * **Violet Glass branding** - retains the 3D violet N badge and Windows icon.
 > Building on **v1.2.8** (updated terms and plan-specific acknowledgements), **v1.2.7** (verified updates, stricter cleanup and license reliability), **v1.2.5** (update progress popup, in-app device reset, and Naviware support links), **v1.2.4** (overlay, setup guidance, and Loadout redesign), **v1.2.3** (behind-the-scenes security and reliability improvements), **v1.2.2** (the Skins on/off toggle & Dashboard skins status), **v1.2.1** (license plans aligned to each store listing), and everything from **v1.2.0**: five preset slots, last-setup memory, the Violet Glass sidebar interface, clear plan-lock indicators, instant preset feedback, the live dashboard, and the built-in auto-updater.
