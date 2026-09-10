@@ -4,25 +4,22 @@ Naviware is a specialized optimization utility that syncs your personalized in-g
 
 ---
 
-## What's New in v1.2.8
+## What's New in v1.2.9
 
-* **Mandatory ban-risk disclosure** - every customer must read and re-accept the updated terms.
-* **Plan-specific warning** - Full and Items customers must acknowledge the permanent-ban risk before continuing.
-* **Persistent risk indicator** - the app keeps the warning visible while item features are available.
-* **Account cleanup guidance** - the procedure below covers both saved perks and per-item add-on history.
-
-> Building on **v1.2.7** (verified updates, stricter cleanup and license reliability), **v1.2.5** (update progress popup, in-app device reset, and Naviware support links), **v1.2.4** (overlay, setup guidance, and Loadout redesign), **v1.2.3** (behind-the-scenes security and reliability improvements), **v1.2.2** (the Skins on/off toggle & Dashboard skins status), **v1.2.1** (license plans aligned to each store listing), and everything from **v1.2.0**: five preset slots, last-setup memory, the Violet Glass sidebar interface, clear plan-lock indicators, instant preset feedback, the live dashboard, and the built-in auto-updater.
+* **Unified Violet Glass branding** - the new 3D violet N appears in the app badges and Windows executable icon.
+* **Direct access to purchased features** - Full, Items, and Skins retain their plan boundaries without the separate Unsafe Features switch.
+* **Updated usage advisory** - Full and Items customers receive a one-time acknowledgement alongside the updated terms.
+* **Quantities you control** - choose a fixed amount up to 2,500 or a custom random range; the default remains 200.
+* **Verified standalone packaging** - the single-file Windows download includes the obfuscated application.
+> Building on **v1.2.8** (updated terms and plan-specific acknowledgements), **v1.2.7** (verified updates, stricter cleanup and license reliability), **v1.2.5** (update progress popup, in-app device reset, and Naviware support links), **v1.2.4** (overlay, setup guidance, and Loadout redesign), **v1.2.3** (behind-the-scenes security and reliability improvements), **v1.2.2** (the Skins on/off toggle & Dashboard skins status), **v1.2.1** (license plans aligned to each store listing), and everything from **v1.2.0**: five preset slots, last-setup memory, the Violet Glass sidebar interface, clear plan-lock indicators, instant preset feedback, the live dashboard, and the built-in auto-updater.
 
 ---
 
-## Permanent ban risk
+## Usage and account risk
 
-Two Naviware customers on the **Full** plan were permanently banned on 2026-08-17 and 2026-08-19. The stated reason was *"Exploits: Abusing bugs or errors in design to gain a competitive advantage"*. These were permanent bans, not suspensions.
+Naviware is unofficial and is not affiliated with the game publisher. Using unearned items, add-ons, offerings, prestige, or cosmetics can lead to account penalties, including a permanent ban; no plan or quantity setting guarantees safety.
 
-Using Full or Items item, add-on, or offering features writes state to the game's servers that the account did not earn. Full-plan prestige also exposes unearned state. That state remains after Naviware closes. On the available evidence, continuing to use the affected features is expected to result in a permanent ban.
-
-The cosmetics-only **Skins** plan does not write durable state, but it broadcasts unowned cosmetics to other players in the lobby.
-
+Some equipped or saved state can remain after Naviware closes. Review the in-app terms and, for Full and Items, the usage advisory before continuing.
 ### Account cleanup
 
 If you have used the affected features, complete every step with Naviware fully closed:
